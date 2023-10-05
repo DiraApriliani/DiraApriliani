@@ -3,45 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #314743;
+        }
+
+        header {
+            background-color: #52815a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            animation: fadeInUp 1s;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project {
+            background-color: #fbff0e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(185, 17, 143, 0.1);
+            animation: fadeInLeft 1s;
+        }
+
+        .project h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .project p {
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #1476e7;
+            color: #3b3636;
+            text-align:left;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInUp 1s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer & Designer</p>
+
+        <h1 style="text-align: center ;"> <img src="d.jpg" width="180" height="240"><h1>Dira Apriliani</h1>
+        <p>Halo Selamat Datang Di Portofolio Saya.</p>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief description about yourself here.</p>
-    </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
+    <div class="container">
         <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
+            <h2><table> 
+                <tr>
+                <td width="5%"><img src="pribadi.png" width="60" height="50"></td>
+                <td width="95%">Profil pribadi</td>
+            </table></h2>
+            <p>Nama saya Dira Apriliani Siswi SMKN 13 BANDUNG Kelas 11 RPL 1.
+                Saya lahir di Bandung 9 April 2007. Memiliki minat menjadi front-end di sebuah website.
+               
+            </p>
         </div>
-        <!-- Add more project entries as needed -->
-    </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
+        <div class="project">
+            
+            <h2><table> 
+                <tr>
+                <td width="5%"><img src="pend.png" width="60" height="50"></td>
+                <td width="95%">Riwayat Pendidikan</td>
+            </table></h2>
+            <p>SDN 159 SEKEJATI<br>
+               SMPN 30 BANDUNG <br>
+               SMKN 13 BANDUNG</p>
+        </div>
 
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
+        <div class="project">
+            <h2><table> 
+                <tr>
+                <td width="5%"><img src="organisasi.png" width="60" height="50"></td>
+                <td width="95%">Pengalaman Berorganisasi</td>
+            </table></h2>
+            <p>Menjadi Bendahara OSIS berpengalaman membuat Rancangan Anggaran Dasar, 
+                dan Laporan Akhir Kegiatan.</p>
+        </div>
+
+        <div class="project">
+            <h2><table> 
+                <tr>
+                <td width="5%"><img src="hobi.jpg" width="60" height="50"></td>
+                <td width="95%">Hobi</td>
+            </table></h2>
+            <p>Mendengarkan musik, Menonton film, Fotografi.</p>
+        </div>
+
+        <!-- Tambahkan lebih banyak proyek di sini -->
+
+    </div>
+
+    
 </body>
 </html>
